@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            fe-09-mq
+        </title>
+        <style>
+            body {
+                margin:0;
+                padding:0;
+                font-family:arial;
+            }
+            .meniu ul {
+                list-style:none;
+                text-align:right;
+                padding:1.8em;
+                border-bottom:0.1em solid lightblue;
+                font-weight:bold;
+            }
+            .meniu li {
+                display:inline-block;
+                margin-right:2em;
+            }
+            #logo {
+                float:left;
+                font-size:2em;
+                margin-left:1em;
+            }
+            #strap {
+                color:lightseagreen;
+            }
+            #app {
+                font-weight:bold;
+            }
+            .login { 
+                height:220px;
+                width:400px;
+                margin:auto;
+                border:1px blue solid;
+                padding:10px;
+            }
+
+            .login input { 
+                margin-top:1em;
+                width:95%;
+            }
+            a {
+                color:lightseagreen;
+                text-decoration:none;
+            }
+            #submit {
+                width:20%;
+                background-color:lightseagreen;
+                color:white;
+            }
+            #blokas1 {
+                display:flex;
+                flex-direction:row;         
+                background-color:lightseagreen;
+                margin-top:1em;
+            }
+            #tekstas1 {
+                flex: 0 1 80%;
+            }
+            #get {
+                display: flex;
+                flex: 0 2 50%;
+                background-color:lightseagreen;
+                justify-content: center;
+                align-items:center;
+            }
+            #get2 {
+                background-color:teal;
+                border-radius:2em;
+                padding:0.3em;
+                color:white;
+            }
+            #tekstas {
+                padding-left:2em;
+            }
+            #blokas2 {
+                display:flex;
+                flex-direction: row;
+                background-color:rgb(54, 54, 54);
+                color:white;
+            }
+            ul {
+                list-style:none;
+            }
+            #col1, #col2, #col3 {
+                flex:0 0 30%;
+                margin-top:1em;
+            }      
+            #email2 {
+                width:60%;
+            }
+            #submit2 {
+                width:15%;
+                background-color:lightseagreen;
+                color:white;
+            }
+            #nowrap {
+                white-space: nowrap;
+            }
+            /* media */
+            .bar {
+                visibility:hidden;
+            }
+            #blokas1 {
+                flex-direction: column;
+                text-align:center;
+                padding-bottom:1em;
+            }
+            #blokas2 {
+                flex-direction:column;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="meniu">
+            <div id="logo"><span id="app">App</span><span id="strap">Strap</span></div>
+            <ul>
+                <li class="bar">HOME</li>
+                <li class="bar">PAGES</li>
+                <li class="bar">FEATURES</li>
+                <li class="bar">SHOP</li>
+                <li class="bar">ELEMENTS</li>
+                <li class="bar">MEGA MENU</li>
+                <li id="menubutton">X</li>
+                <li id="search">&#x1F50E</li>
+            </ul>
+        </div>
+        <div class="login">
+            <h3 style="font-weight:bold">Login</h3>
+            <br>
+            Not signed up? 
+            <a href="#">Sign up here.</a>
+            <input type="text" placeholder="Email" id="email">  
+            <input type="password" placeholder="Password" id="password">  
+            <input type="submit" value="Login" id="submit">
+            <a href="#" class="forgot">Forgotten password?</a>
+        </div>
+        <div id="blokas1">
+            <ul id="tekstas1">
+                <li><h3>AWESOME FEATURES</h3></li>
+                <li>99% Uptime / Free Upgrades / Fully Responsive / Bug Free</li>
+            </ul>
+                <div id="get">
+                    <div id="get2">Get AppStrap Today &rarr;</div>
+                </div> 
+        </div>
+        <div id="blokas2">
+            <ul id="col1">
+                <li><h5>CONTACT US</h5></li>
+                <li>....... ..... .................... ............... ..............</li>
+                <li>....... ............... ................. ......... ................... ......</li>
+            </ul>
+            <ul id="col2">
+                <li><h5>ABOUT US</h5></li>
+                <li>...... ............... ................. ........................ ................... ............... ................... ................ .............</li>
+            </ul>
+            <ul id="col3">
+                <li><h5>NEWSLETTER</h5></li>
+                <li>............. ........... .................... ........... ....................... ................. .............. ................... ..................</li>
+                <li><div id="nowrap"><input type="text" placeholder="Email" id="email2"><input type="submit" value="Go!" id="submit2"></div></li>
+            </ul>
+        </div>
+    </body>
+</html>
